@@ -6,15 +6,19 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { PlanATripPage } from '../pages/plan-a-trip/plan-a-trip';
 import { TbMenuComponent } from '../components/tb-menu/tb-menu';
 import { TbHeaderComponent } from '../components/tb-header/tb-header';
+import { TbFooterComponent } from '../components/tb-footer/tb-footer';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    PlanATripPage,
     TbMenuComponent,
-    TbHeaderComponent
+    TbHeaderComponent,
+    TbFooterComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +27,8 @@ import { TbHeaderComponent } from '../components/tb-header/tb-header';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    PlanATripPage
   ],
   providers: [
     StatusBar,

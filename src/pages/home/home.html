@@ -1,8 +1,10 @@
 <tb-header></tb-header>
+<tb-menu></tb-menu>
 
-<ion-content class="card-background-page">
-  <tb-menu></tb-menu>
-  <ion-card>
+<ion-content class="card-background-page tb-page-content">
+  <h4>What would you like to do?</h4>
+  <hr>
+  <ion-card button (click)="openPlanATripPage()">
     <img src="assets/img/plan.jpg" />
     <div class="card-title">Plan A Trip</div>
     <div class="card-subtitle">Discover the world</div>
@@ -25,4 +27,6 @@
     <div class="card-title">Friend's Trips</div>
     <div class="card-subtitle">What's everyone up to?</div>
   </ion-card>
+
+  <tb-footer></tb-footer>
 </ion-content>
