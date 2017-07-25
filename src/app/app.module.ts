@@ -6,11 +6,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { TbMenuComponent } from '../components/tb-menu/tb-menu';
+import { TbHeaderComponent } from '../components/tb-header/tb-header';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    TbMenuComponent,
+    TbHeaderComponent
   ],
   imports: [
     BrowserModule,
